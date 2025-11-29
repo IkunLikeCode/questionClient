@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <div class="title">问卷调查管理平台</div>
-    <a href="http://localhost:5173/login" class="startBtn">开始问卷调查</a>
+    <a href="http://115.190.61.20" class="startBtn">开始问卷调查</a>
   </div>
 </template>
 
