@@ -6,5 +6,8 @@ export default defineNuxtConfig({
     port: 3000,
     host: "localhost",
   },
+  app: {
+    baseURL: "/question/",
+  },
   ssr: false,
 });
