@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: "/question/",
+    buildAssetsDir: "",
   },
   ssr: false,
 });
