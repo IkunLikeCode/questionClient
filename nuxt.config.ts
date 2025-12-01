@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: process.env.API_BASE || "http://115.190.61.20:9000",
+      apiBase: process.env.API_BASE || "http://115.190.61.20",
     },
   },
   ssr: true,
