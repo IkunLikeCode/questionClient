@@ -1,6 +1,9 @@
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
-  const url = "http://115.190.61.20/api/statistics";
+  const {
+    public: { apiBase },
+  } = useRuntimeConfig();
+  const url = `${apiBase}/api/statistics`;
   const result = await $fetch(url, {
     method: "POST",
     body,

@@ -4,6 +4,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   devServer: {
     port: 3000,
-    host: "localhost",
+    host: "0.0.0.0",
   },
+  nitro: {
+    preset: "vercel",
+  },
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.API_BASE || "http://115.190.61.20:9000",
+    },
+  },
+  ssr: true,
 });
